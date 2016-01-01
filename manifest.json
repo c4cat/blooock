@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name" : "blooock",
+	"version" : "0.1",
+	"description" : "stop wasting you time on the fxxking useless website!",
+	"browser_action":{
+		"default_title" : "blooock"
+		// "default_popup" : "popup.html"
+	},
+	// "content_scripts":[
+	// 	{
+	// 		"matches": ["*://*.d7vg.com/*"],
+	// 		"js": ["js/main.js"]
+	// 	}
+	// ],
+	"background":{
+		"scripts": [
+			"js/background.js"
+		]
+	},
+	"permissions": [
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*/*",
+		"storage",
+		"contextMenus"
+	]
+}
